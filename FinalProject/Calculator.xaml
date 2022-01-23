@@ -1,0 +1,25 @@
+﻿<Window x:Class="FinalProject.Calculator"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProject"
+        mc:Ignorable="d"
+            Title="LoginWindow" Height="450" Width="800" Background="#CEF0E6">
+    <StackPanel Width="306"
+                Background="White" Margin="247,10,247,10">
+        <Label Content="BMI Calculator" Foreground="Black"
+               FontWeight="Bold" FontSize="18" Margin="34,50,0,40" Width="176" HorizontalAlignment="Center"/>
+        <TextBlock Text="What's your height?(cm)" Foreground="Black" FontSize="15" RenderTransformOrigin="0.55,0.355" Width="170" HorizontalAlignment="Center" Margin="3,0,0,0">
+        </TextBlock>
+        <TextBox x:Name="txtHeight" Text="" TextWrapping="Wrap" Width="135" Height="24" Margin="0,10,0,0"/>
+        <TextBlock Text="What's your weight?(kg)" Foreground="Black" FontSize="15" RenderTransformOrigin="0.55,0.355" Width="164" HorizontalAlignment="Center" Margin="3,22,0,0">
+        </TextBlock>
+        <TextBox x:Name="txtWeight" Text="" TextWrapping="Wrap" Width="135" Height="24" Margin="0,10,0,0"/>
+        <Button x:Name="btnSubmit" Content="Submit" Width="100" Height="25" Background="#50C2C9" Foreground="White" Margin="0,47,0,0" Click="btnSubmit_Click"/>
+        <Image Height="87" Width="107" Source="/shape-1.png" Margin="203,8,0,-25"/>
+        <Image Height="100" Width="100" Source="/shape.png" Margin="-205,-718,0,0"/>
+        <Button x:Name="btnCalout" Content="-->" Width="36" Margin="-247,-32,0,0" Height="40" FontSize="18" Background="White" Foreground="#6AE0BD" Click="btnCalout_Click"/>
+
+    </StackPanel>
+</Window>

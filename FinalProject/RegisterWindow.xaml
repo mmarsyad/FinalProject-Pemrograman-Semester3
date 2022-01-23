@@ -1,0 +1,25 @@
+﻿<Window x:Class="FinalProject.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProject"
+        mc:Ignorable="d"
+         Title="LoginWindow" Height="450" Width="800" Background="#CEF0E6">
+    <StackPanel Width="306"
+                Background="White" Margin="247,10,247,10">
+        <Label Content="Welcome" Foreground="Black"
+               FontWeight="Bold" FontSize="18" Margin="0,50,0,40" Width="96" HorizontalAlignment="Center"/>
+        <TextBlock Text="Please enter this data below!" Foreground="Black" FontSize="15" RenderTransformOrigin="0.55,0.355" Width="195" HorizontalAlignment="Center" Margin="3,0,0,0">
+        </TextBlock>
+        <TextBox x:Name="txtSid" Text="ID" TextWrapping="Wrap" Width="100" Height="23" FontSize="14" FontStyle="Italic" Margin="0,19,0,0" HorizontalAlignment="Center"/>
+        <TextBox x:Name="txtSname" Text="Name" TextWrapping="Wrap" Width="100" Height="23" FontSize="14" FontStyle="Italic" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+        <TextBox x:Name="txtSuser" Text="username" TextWrapping="Wrap" Width="100" Height="23" FontSize="14" FontStyle="Italic" Margin="0,13,0,0" HorizontalAlignment="Center"/>
+        <TextBox x:Name="txtSpass" Text="password" TextWrapping="Wrap" Width="100" Height="23" FontSize="14" FontStyle="Italic" Margin="0,13,0,0" HorizontalAlignment="Center"/>
+        <Button x:Name="btnRegister" Content="Register" Width="100" Height="25" Margin="0,20,0,0" Background="#50C2C9" HorizontalAlignment="Center" Foreground="White" Click="btnRegister_Click"/>
+        <Image Height="87" Width="107" Source="/shape-1.png" Margin="203,-3,0,-25"/>
+        <Image Height="100" Width="100" Source="/shape.png" Margin="-205,-717,0,0"/>
+        <Button x:Name="btnRout" Content="-->" Width="36" Margin="-247,-32,0,0" Height="40" FontSize="18" Background="White" Foreground="#6AE0BD" Click="btnRout_Click"/>
+
+    </StackPanel>
+</Window>

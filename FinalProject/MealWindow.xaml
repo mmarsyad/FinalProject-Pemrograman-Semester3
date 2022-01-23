@@ -1,0 +1,26 @@
+﻿<Window x:Class="FinalProject.MealWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProject"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="450" Width="800" Background="#CEF0E6">
+    <StackPanel Width="306"
+                Background="White" Margin="247,10,247,10" HorizontalAlignment="Center">
+        <Label Content="Meal Plan" Foreground="Black"
+               FontWeight="Bold" FontSize="18" Margin="-9,29,0,40" Width="94" HorizontalAlignment="Center"/>
+        <TextBlock Text="      SENIN" TextWrapping="Wrap" Height="62" Width="74" Margin="-202,-24,-92,14" Background=" #6AE0BD" Foreground="White" FontWeight="Bold"/>
+        <TextBlock TextWrapping="Wrap" Height="62" Width="74" Margin="14,-86,-94,0" Text="     SELASA" Background=" #6AE0BD" Foreground="White" FontWeight="Bold"/>
+        <TextBlock Text="      RABU" TextWrapping="Wrap" Height="62" Width="74" Margin="-108,0,0,0" Background=" #6AE0BD" Foreground="White" FontWeight="Bold"/>
+        <TextBlock Text="      KAMIS" TextWrapping="Wrap" Height="62" Width="74" Margin="110,-62,0,0" Background=" #6AE0BD" Foreground="White" FontWeight="Bold"/>
+        <TextBlock Text="     JUMAT" TextWrapping="Wrap" Height="62" Width="74" Margin="-108,15,0,0" Background=" #6AE0BD" Foreground="White" FontWeight="Bold"/>
+        <TextBlock Text="      SABTU" TextWrapping="Wrap" Height="62" Width="74" Margin="110,-62,0,0" Background=" #6AE0BD" Foreground="White" FontWeight="Bold"/>
+        <TextBlock Text="    MINGGU" TextWrapping="Wrap" Height="62" Width="74" Margin="0,22,0,0" Background=" #6AE0BD" Foreground="White" FontWeight="Bold"/>
+        <Image Height="87" Width="107" Source="/shape-1.png" Margin="203,-45,0,-25"/>
+        <Image Height="100" Width="100" Source="/shape.png" Margin="-205,-720,0,0"/>
+        <Button x:Name="btnMout" Content="-->" Width="36" Margin="-247,-32,0,0" Height="40" FontSize="18" Background="White" Foreground="#6AE0BD" Click="btnMout_Click"/>
+
+
+    </StackPanel>
+</Window>
