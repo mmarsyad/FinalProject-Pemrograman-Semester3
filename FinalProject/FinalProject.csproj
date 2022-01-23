@@ -18,10 +18,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="shape-1.png" />
-    <Resource Include="shape-13.png" />
-    <Resource Include="shape-6.png" />
-    <Resource Include="shape.png" />
+    <Resource Include="Images\shape-1.png" />
+    <Resource Include="Images\shape-13.png" />
+    <Resource Include="Images\shape-6.png" />
+    <Resource Include="Images\shape.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="View\" />
   </ItemGroup>
 
 </Project>
