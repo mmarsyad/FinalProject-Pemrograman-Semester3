@@ -5,17 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProject"
         mc:Ignorable="d"
-       Title="AboutWindow" Height="450" Width="800" Background="#CEF0E6">
-    <StackPanel Width="306"
-                Background="White" Margin="247,10,247,10">
+       Title="AboutWindow" Height="450" Width="800" WindowState="Maximized" Background="#CEF0E6" HorizontalAlignment="Center">
+    <StackPanel
+                Background="White" Width="400" Height="400">
+        <Image Height="100" Width="100" Source="./Images//shape.png" Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Content="About the Diet++" Foreground="Black" FontFamily="Poppins"
-               FontWeight="Bold" FontSize="18" Margin="0,29,0,40" Width="170" HorizontalAlignment="Center"/>
+               FontWeight="Bold" FontSize="18" Margin="0,-70,0,40" Width="170" HorizontalAlignment="Center"/>
         <TextBlock Text="In nutrition, diet is the sum of food consumed by a person or other organism. The word diet often implies the use of specific intake of nutrition for health or weight-management reasons. Although humans are omnivores, each culture and each person holds some food preferences or some food taboos " Foreground="Black" FontSize="15" RenderTransformOrigin="0.55,0.355" Width="215" Height="268" Margin="0,-25,0,0" TextWrapping="Wrap" Background="#CEF0E6" FontFamily="Poppins"/>
-        <Image Height="100" Width="100" Source="/shape-1.png" Margin="203,-16,0,0"/>
-        <Button x:Name="btnOut" Content="-->" Width="36" Margin="-247,-87,0,0" Height="40" FontSize="18" Background="White" Foreground="#6AE0BD" Click="btnOut_Click"/>
-        <Image Height="100" Width="100" Source="/shape.png" Margin="-205,-790,0,0"/>
-
-
-
+        <Image Height="100" Width="100" Source="./Images/shape-1.png" Margin="0,-20,0,0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+        <Button x:Name="btnOut" Content="-->" Width="36" Margin="0,-95,0,0" Height="40" FontSize="18" Background="White" Foreground="#6AE0BD" Click="btnOut_Click" HorizontalAlignment="Left"/>
     </StackPanel>
 </Window>

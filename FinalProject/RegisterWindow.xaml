@@ -24,9 +24,10 @@
                 <Button x:Name="btnRegister" Content="Register" Width="142" Height="25" Margin="0,20,0,0" Background="#50C2C9" HorizontalAlignment="Center" Foreground="White" Click="btnRegister_Click" FontFamily="Poppins"/>
             </StackPanel>
             <StackPanel Margin="0,25,0,0">
-                <Image Height="87" Width="107" Source="./Images/shape-1.png" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+                <Button x:Name="btnRout" Content="-->" Width="36" Height="40" FontSize="18" Background="White" Foreground="#6AE0BD" Click="btnRout_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,00,0,0"/>
+                <Image Height="87" Width="107" Source="./Images/shape-1.png" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,-40,0,0"/>
             </StackPanel>
-            <Button x:Name="btnRout" Content="-->" Width="36" Height="40" FontSize="18" Background="White" Foreground="#6AE0BD" Click="btnRout_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,-200,0,0"/>
+            
         </StackPanel>
     </Grid>
 </Window>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProject"
         mc:Ignorable="d"
-        Title="MealWindow" Height="450" Width="800" Background="#CEF0E6">
+        Title="MealWindow" Height="450" Width="800" WindowState="Maximized" Background="#CEF0E6">
     <StackPanel Width="306"
                 Background="White" Margin="247,10,247,10" HorizontalAlignment="Center">
         <Label Content="Meal Plan" Foreground="Black"

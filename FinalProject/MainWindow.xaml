@@ -5,20 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProject"
         mc:Ignorable="d"
-        Title="MainWindow" Width="800" Background="#CEF0E6" HorizontalAlignment="Center">
+        Title="MainWindow" Height="450" Width="800" WindowState="Maximized" Background="#CEF0E6" HorizontalAlignment="Center">
     <StackPanel
-                Background="White" Margin="247,10,247,10" Orientation="Vertical" Height="398" Width="306">
+                Background="White" Orientation="Vertical" Width="400" Height="400">
+        <Image Height="100" Width="100" Source="./Images//shape.png" Margin="0,0,0,-100" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Label Content="Welcome" Foreground="Black" FontFamily="Poppins"
-               FontWeight="Bold" FontSize="18" Margin="0,50,0,40" Width="96" HorizontalAlignment="Center"/>
+               FontWeight="Bold" FontSize="18" Margin="0,20,0,70" Width="96" HorizontalAlignment="Center"/>
         <TextBlock Text="We here to help you" Foreground="Black" FontSize="15" RenderTransformOrigin="0.55,0.355" Width="171" HorizontalAlignment="Center" Margin="-1,-25,0,0" FontFamily="Poppins"/>
         <TextBlock Text="to have an ideal body :)" Foreground="Black" FontSize="15" RenderTransformOrigin="0.55,0.355" Width="163" HorizontalAlignment="Center" Margin="-7,-7,0,0" FontFamily="Poppins"/>
         <Button x:Name="btnAbout" Content="About" Width="100" Margin="0,91,0,0" Background="Gray" Foreground="White" Click="btnAbout_Click" FontFamily="Poppins"/>
         <Button x:Name="btnMeal" Content="Meal Plan" Width="100" Margin="0,10,0,0" Background="Gray" Foreground="White" Click="btnMeal_Click" FontFamily="Poppins"/>
         <Button x:Name="btnCal" Content="BMI Calculator" Width="100" Margin="0,10,0,0" Background="Gray" Foreground="White" Click="btnCal_Click" FontFamily="Poppins"/>
-        <StackPanel Width="306" Height="199" Margin="0,-439,0,0" Background="#6AE0BD" Opacity="0.5"/>
-        <Image Height="100" Width="100" Source="/shape-6.png" Margin="-203,-560,0,0"/>
-        <Image Height="100" Width="100" Source="/shape-13.png" Margin="206,-15,0,0"/>
-        <Button x:Name="btnSignout" Content="--}" Width="46" Margin="-247,-69,0,0" Height="40" FontSize="18" Background="White" Foreground="#6AE0BD" Click="btnSignout_Click"/>
+        <StackPanel Width="400" Height="199" Margin="0,-439,0,0" Background="#6AE0BD" Opacity="0.5"/>
+        <Image Height="100" Width="100" Source="./Images/shape-1.png" Margin="0,0,0,0" HorizontalAlignment="Right"/>
+        <Button x:Name="btnSignout" Content="&lt;--" Width="46" Margin="0,-80,0,0" Height="40" FontSize="18" Background="White" Foreground="#6AE0BD" Click="btnSignout_Click" HorizontalAlignment="Left"/>
 
 
 
