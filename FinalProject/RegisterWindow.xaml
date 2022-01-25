@@ -6,19 +6,27 @@
         xmlns:local="clr-namespace:FinalProject"
         mc:Ignorable="d"
         Title="RegisterWindow" Height="450" Width="800" WindowState="Maximized" Background="#CEF0E6" HorizontalAlignment="Center">
-    <StackPanel Width="306"
-                Background="White" Margin="247,10,247,10">
-        <Label Content="Welcome" Foreground="Black"
-               FontWeight="Bold" FontSize="18" Margin="0,50,0,40" Width="96" HorizontalAlignment="Center" FontFamily="Poppins" Opacity="0.8"/>
-        <TextBlock Text="Please enter this data below!" Foreground="Black" FontSize="15" RenderTransformOrigin="0.55,0.355" Width="195" HorizontalAlignment="Center" Margin="3,0,0,0">
-        </TextBlock>
-        <TextBox x:Name="txtSid" Text="ID" TextWrapping="Wrap" Width="142" Height="23" FontSize="12" Margin="0,19,0,0" HorizontalAlignment="Center" FontFamily="Poppins" Opacity="0.5"/>
-        <TextBox x:Name="txtSname" Text="Name" TextWrapping="Wrap" Width="142" Height="23" FontSize="12" FontStyle="Italic" Margin="0,10,0,0" HorizontalAlignment="Center" FontFamily="Poppins" Opacity="0.5"/>
-        <TextBox x:Name="txtSuser" Text="username" TextWrapping="Wrap" Width="142" Height="23" FontSize="12" FontStyle="Italic" Margin="0,13,0,0" HorizontalAlignment="Center" FontFamily="Poppins" Opacity="0.5"/>
-        <TextBox x:Name="txtSpass" Text="password" TextWrapping="Wrap" Width="142" Height="23" FontSize="12" FontStyle="Italic" Margin="0,13,0,0" HorizontalAlignment="Center" FontFamily="Poppins" Opacity="0.5"/>
-        <Button x:Name="btnRegister" Content="Register" Width="142" Height="25" Margin="0,20,0,0" Background="#50C2C9" HorizontalAlignment="Center" Foreground="White" Click="btnRegister_Click" FontFamily="Poppins"/>
-        <Image Height="87" Width="107" Source="./Images/shape-1.png" Margin="203,-3,0,-25"/>
-        <Image Height="100" Width="100" Source="./Images/shape.png" Margin="-205,-717,0,0"/>
-        <Button x:Name="btnRout" Content="-->" Width="36" Margin="-247,-32,0,0" Height="40" FontSize="18" Background="White" Foreground="#6AE0BD" Click="btnRout_Click"/>
-    </StackPanel>
+    <Grid>
+        <StackPanel Width="400" Height="400"
+                Background="White">
+            <StackPanel>
+                <Image Height="87" Width="107" Source="./Images/shape.png" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Welcome" Foreground="Black"
+               FontWeight="Bold" FontSize="18" Margin="0,-30,0,0" Width="96" HorizontalAlignment="Center" FontFamily="Poppins" Opacity="0.8"/>
+                <TextBlock Text="Please enter this data below!" Foreground="Black" FontSize="15" RenderTransformOrigin="0.55,0.355" Width="195" HorizontalAlignment="Center" Margin="3,0,0,0">
+                </TextBlock>
+                <TextBox x:Name="txtSid" Text="ID" TextWrapping="Wrap" Width="142" Height="23" FontSize="12" Margin="0,19,0,0" HorizontalAlignment="Center" FontFamily="Poppins" Opacity="0.5"/>
+                <TextBox x:Name="txtSname" Text="Name" TextWrapping="Wrap" Width="142" Height="23" FontSize="12" FontStyle="Italic" Margin="0,10,0,0" HorizontalAlignment="Center" FontFamily="Poppins" Opacity="0.5"/>
+                <TextBox x:Name="txtSuser" Text="username" TextWrapping="Wrap" Width="142" Height="23" FontSize="12" FontStyle="Italic" Margin="0,10,0,0" HorizontalAlignment="Center" FontFamily="Poppins" Opacity="0.5"/>
+                <TextBox x:Name="txtSpass" Text="password" TextWrapping="Wrap" Width="142" Height="23" FontSize="12" FontStyle="Italic" Margin="0,10,0,0" HorizontalAlignment="Center" FontFamily="Poppins" Opacity="0.5"/>
+                <Button x:Name="btnRegister" Content="Register" Width="142" Height="25" Margin="0,20,0,0" Background="#50C2C9" HorizontalAlignment="Center" Foreground="White" Click="btnRegister_Click" FontFamily="Poppins"/>
+            </StackPanel>
+            <StackPanel Margin="0,25,0,0">
+                <Image Height="87" Width="107" Source="./Images/shape-1.png" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+            </StackPanel>
+            <Button x:Name="btnRout" Content="-->" Width="36" Height="40" FontSize="18" Background="White" Foreground="#6AE0BD" Click="btnRout_Click" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,-200,0,0"/>
+        </StackPanel>
+    </Grid>
 </Window>

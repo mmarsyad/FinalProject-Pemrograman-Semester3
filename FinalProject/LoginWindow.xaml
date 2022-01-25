@@ -6,21 +6,31 @@
         xmlns:local="clr-namespace:FinalProject"
         mc:Ignorable="d"
         Title="LoginWindow" Height="450" Width="800" WindowState="Maximized" Background="#CEF0E6" HorizontalAlignment="Center">
-    <StackPanel Width="306"
-                Background="White" Margin="247,10,247,10">
-        <Label Content="Welcome" Foreground="Black"
-               FontWeight="Bold" FontSize="18" Margin="0,50,0,40" Width="96" HorizontalAlignment="Center" FontFamily="Poppins" Opacity="0.8"/>
-        <TextBlock Text="Let's help you have an ideal body" Foreground="Black" FontSize="13" RenderTransformOrigin="0.55,0.355" Width="222" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontFamily="Poppins" Opacity="0.8">
-        </TextBlock>
-        <TextBox x:Name="txtUsername" Text="Username" TextWrapping="Wrap" Width="142" Height="23" FontSize="12" FontStyle="Normal" Margin="0,30,0,0" HorizontalAlignment="Center" FontFamily="Poppins" Opacity="0.5"/>
-        <TextBox x:Name="txtPassword" Text="password" TextWrapping="Wrap" Width="142" Height="23" FontSize="12" FontStyle="Normal" Margin="0,20,0,0" HorizontalAlignment="Center" FontFamily="Poppins" Opacity="0.5"/>
-        <Label Content="Forgot password?" Foreground="Blue"
+    <Grid>
+        <StackPanel Width="400" Height="400"
+                Background="White" HorizontalAlignment="Stretch">
+            <StackPanel>
+                <Image Height="87" Width="107" Source="./Images/shape.png" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Stretch">
+                <Label Content="Welcome" Foreground="Black"
+               FontWeight="Bold" FontSize="18" Margin="0,-30,0,0" Width="96" HorizontalAlignment="Center" FontFamily="Poppins" Opacity="0.8"/>
+                <TextBlock Text="Let's help you have an ideal body" Foreground="Black" FontSize="13" RenderTransformOrigin="0.55,0.355" Width="222" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontFamily="Poppins" Opacity="0.8">
+                </TextBlock>
+                <TextBox x:Name="txtUsername" Text="Username" TextWrapping="Wrap" Width="142" Height="23" FontSize="12" FontStyle="Normal" Margin="0,30,0,0" HorizontalAlignment="Center" FontFamily="Poppins" Opacity="0.5"/>
+                <TextBox x:Name="txtPassword" Text="password" TextWrapping="Wrap" Width="142" Height="23" FontSize="12" FontStyle="Normal" Margin="0,20,0,0" HorizontalAlignment="Center" FontFamily="Poppins" Opacity="0.5"/>
+                <Label Content="Forgot password?" Foreground="Blue"
                FontWeight="Regular" FontSize="7" Width="72" Margin="80,0,0,0" Height="23" MouseLeftButtonDown="Label_MouseLeftButtonDown" FontFamily="Poppins"/>
-        <Button x:Name="btnLogin" Content="Login" Width="142" Height="25" Margin="0,6,0,0" Background="#50C2C9" HorizontalAlignment="Center" Foreground="White" Click="btnLogin_Click" FontFamily="Poppins"/>
-        <Label x:Name="lblSign" Content="Don't have an account? Sign Up!" Foreground="Blue" FontFamily="Poppins"
+                <Button x:Name="btnLogin" Content="Login" Width="142" Height="25" Margin="0,6,0,0" Background="#50C2C9" HorizontalAlignment="Center" Foreground="White" Click="btnLogin_Click" FontFamily="Poppins"/>
+                <Label x:Name="lblSign" Content="Don't have an account? Sign Up!" Foreground="Blue" FontFamily="Poppins"
                FontWeight="Regular" FontSize="8" Width="136" Margin="0,0,0,0" Height="23" MouseLeftButtonDown="lblSign_MouseLeftButtonDown">
-        </Label>
-        <Image Height="87" Width="107" Source="./Images/shape-1.png" Margin="203,15,0,-25"/>
-        <Image Height="100" Width="100" Source="./Images/shape.png" Margin="-208,-723,0,0"/>
-    </StackPanel>
+                </Label>
+            </StackPanel>
+            <StackPanel>
+                <Image Height="87" Width="107" Source="./Images/shape-1.png" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0,35,0,0"/>
+            </StackPanel>
+            
+        </StackPanel>
+        
+    </Grid>
 </Window>
